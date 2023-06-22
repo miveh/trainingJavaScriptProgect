@@ -3,16 +3,28 @@
 } */
 
 /* 
+type selectors:
+  html element
+  class : .class-name
+  iD : #iD-name
+  Attribute selectors: a[title] a[href="link...."]
+  pseudo-classes: a:hover {}
+  article > p : یعنی تگ های p که مستقیما فرزند article هستن
+
+
+*/
+
+/* 
 در کل اعمال شدن کلاس الویت داره به سلکتور ها 
 مرحله ی بعدی الویت فقط بستگی به ترتیب کدمون داره اون استایلی که پایین تر نوشتیم اعمال میشه
 */
-h1 {
+/* h1 {
   color: red;
-}
+} */
 
-h1 {
+/* h1 {
   color: yellow;
-}
+} */
 
 p {
   color: green;
@@ -64,4 +76,30 @@ p {
 
 .div-style {
   font-size: 15px;
+}
+
+span.highlight {
+  background-color: yellow;
+}
+
+/* pseudo class & pseudo element */
+h1.highlight {
+  background-color: pink;
+}
+body h1.highlight {
+  color: orange;
+}
+body h1.highlight:hover {
+  color: hotpink;
+}
+
+body p.highglight span:first-child {
+  font-style: italic;
+}
+.box::before {
+  content: "This should show before the other content. ";
+}
+
+.box::after {
+  content: " ➥";
 }
