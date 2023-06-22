@@ -1,0 +1,67 @@
+/* .special {
+  color: blueviolet;
+} */
+
+/* 
+در کل اعمال شدن کلاس الویت داره به سلکتور ها 
+مرحله ی بعدی الویت فقط بستگی به ترتیب کدمون داره اون استایلی که پایین تر نوشتیم اعمال میشه
+*/
+h1 {
+  color: red;
+}
+
+h1 {
+  color: yellow;
+}
+
+p {
+  color: green;
+  /* line-height: 4; */
+}
+/* p {
+  color: red;
+} */
+
+.bolder-p {
+  font-weight: bolder;
+
+  /* text align :
+      used to control how text is aligned 
+      within its containing content box.
+  ; */
+  text-align: justify;
+
+  /* The hyphens property is specified as a
+   single keyword value chosen from the list below. */
+
+  hyphens: manual; /* none manual auto*/
+  line-height: 4;
+  letter-spacing: 14px;
+  word-spacing: 5px;
+}
+
+.lighter-p {
+  font-size: 50px;
+
+  /* line-height: 4; */
+  font-weight: bold;
+  /*text-transform: full-width; */
+  /* text-shadow: 4px 4px 2px gray; */
+  /* text-shadow: 1px 1px 1px red, 2px 2px 1px black; */
+
+  /* background-color: #333;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 2px 3px 6px; */
+
+  text-shadow: 0 5px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,
+    -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5,
+    -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5,
+    -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+.div-style {
+  font-size: 15px;
+}
