@@ -26,10 +26,10 @@ type selectors:
   color: yellow;
 } */
 
-p {
+/* p {
   color: green;
   /* line-height: 4; */
-}
+  
 /* p {
   color: red;
 } */
@@ -103,3 +103,5 @@ body p.highglight span:first-child {
 .box::after {
   content: " ➥";
 }
+ */
+
