@@ -29,7 +29,7 @@ type selectors:
 /* p {
   color: green;
   /* line-height: 4; */
-  
+
 /* p {
   color: red;
 } */
@@ -103,5 +103,24 @@ body p.highglight span:first-child {
 .box::after {
   content: " ➥";
 }
- */
 
+/*
+link style: این ترتیب خیلی مهم است و باید حفظ شود.
+
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+} */
