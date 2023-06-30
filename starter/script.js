@@ -124,6 +124,7 @@ console.log(appleJuice);
 
 //w02-function declarations vs expressions-------------------------------
 
+/*
 function calcAge1(birthYear) {
   const age = 2023 - birthYear;
   return age;
@@ -140,3 +141,66 @@ const calAge2 = function (birthYear) {
 
 const age2 = calAge2(1998);
 console.log(age1, age2);
+*/
+
+//w03--Arrow function---------------------------------------
+
+//without return keyword
+
+/*
+const calAge = (birthYear) => 2023 - birthYear; //easy and fast
+const age = calAge(1998);
+console.log(age);
+
+//مناسب وقتی که بیشتر از یک پارامتر داریم
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2023 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retirement in ${retirement}`;
+};
+
+console.log(yearsUntilRetirement(1998, "zaZA"));
+*/
+
+//w03 - function calling function----------------------------------
+
+/*
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  // console.log(apples, oranges);
+  const juice = `Juise with ${applePieces} pieces of apples and
+   ${orangePieces} pieces of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 2));
+*/
+
+//part2-coding challenge #1
+
+const calcAerage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAerage(1, 2, 3));
+
+//test1
+const scoreDolphines = calcAerage(44, 23, 71);
+const scoreKoalas = calcAerage(65, 54, 49);
+console.log(scoreDolphines, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`dol win🏆 `);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`koalas win 🏆`);
+  } else {
+    console.log(`no teams wins ...`);
+  }
+};
+
+checkWinner(scoreDolphines, scoreKoalas);
+checkWinner(576, 111);
