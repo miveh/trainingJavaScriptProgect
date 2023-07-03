@@ -1,0 +1,48 @@
+body {
+  /* margin: auto; */
+  /* height: 90vh; */
+  position: relative;
+  background-image: url(/images/resturant.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#mrg-nav {
+  position: absolute;
+  text-align: center;
+  left: 35%;
+  z-index: 1;
+}
+
+nav > a {
+  margin: 10px 10px 10px 10px;
+
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+}
+
+.dark-box {
+  padding: 20px 20px 20px 20px;
+  /* position: absolute; */
+  text-align: center;
+  color: antiquewhite;
+  background-color: rgba(181, 165, 77, 0.45);
+  /* background-color: red; */
+  width: 35%;
+  height: 100%;
+}
+
+#p-style {
+  font-style: italic;
+}
+
+#call-p-style {
+  font-size: 25px;
+}
+
+.btn-style {
+  border: 1px solid white;
+  color: aliceblue;
+  background-color: orange;
+}
