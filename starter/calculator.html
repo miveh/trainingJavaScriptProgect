@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+
+  <body>
+    <div class="contaner">
+      <div class="result">
+        <!-- <input id="" class="in1" /> -->
+
+        <input id="result" class="in2" value="0" />
+      </div>
+
+      <div class="boxnumber">
+        <div class="row row1">
+          <button class="num" onclick="clearBtn()">AC</button>
+
+          <button type="button" onclick="clearBtn()" class="num clear">
+            C
+          </button>
+
+          <button value="%" onclick="dispaly('%')" class="num">%</button>
+
+          <button value="/" onclick="dispaly('/')" class="num">/</button>
+        </div>
+
+        <div class="row row2">
+          <button value="7" onclick="dispaly('7')" class="num">7</button>
+
+          <button value="8" onclick="dispaly('8')" class="num">8</button>
+
+          <button value="9" onclick="dispaly('9')" class="num">9</button>
+
+          <button value="*" onclick="dispaly('*')" class="num">X</button>
+        </div>
+
+        <div class="row row3">
+          <button value="4" onclick="dispaly('4')" class="num">4</button>
+
+          <button value="5" onclick="dispaly('5')" class="num">5</button>
+
+          <button value="6" onclick="dispaly('6')" class="num">6</button>
+
+          <button value="-" onclick="dispaly('-')" class="num">-</button>
+        </div>
+
+        <div class="row row4">
+          <button value="1" onclick="dispaly('1')" class="num">1</button>
+
+          <button value="2" onclick="dispaly('2')" class="num">2</button>
+
+          <button value="3" onclick="dispaly('3')" class="num">3</button>
+
+          <button value="+" onclick="dispaly('+')" class="num">+</button>
+        </div>
+
+        <div class="row row5">
+          <button value="0" onclick="dispaly('0')" class="num">0</button>
+
+          <button value="." onclick="dispaly('.')" class="num">.</button>
+
+          <button onclick="calculate()" class="num numm">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function clearBtn() {
+        document.getElementById("result").value = "";
+      }
+
+      function dispaly(value) {
+        document.getElementById("result").value += value;
+      }
+
+      function calculate() {
+        let str = document.getElementById("result").value;
+        let calc = eval(str);
+        document.getElementById("result").value = calc;
+      }
+    </script>
+  </body>
+</html>

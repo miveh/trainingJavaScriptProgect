@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  background-color: #191b28;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+  font-family: "Orbitron", sans-serif;
+  background-color: #dcdbe1;
+  border: solid black 0.5px;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 65%;
+}
+
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+.contaner {
+  width: 300px;
+
+  height: 60vh;
+
+  margin: 100px auto;
+
+  background-color: #243441;
+
+  align-items: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: white;
+
+  border-radius: 20px;
+}
+
+.boxnumber {
+  width: 200px;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+
+.num {
+  padding: 6px;
+
+  flex-grow: 1;
+
+  padding-right: 5px;
+
+  margin-right: 5px;
+
+  border-radius: 10px;
+
+  box-shadow: 10px 10px 20px rgb(56, 55, 55);
+
+  background-color: #32414e;
+
+  color: white;
+}
+
+.num:hover {
+  background-color: rgb(23, 23, 66);
+
+  transition: 0.5s;
+}
+
+.row {
+  display: flex;
+
+  padding-bottom: 20px;
+
+  padding-top: 10px;
+}
+
+.numm {
+  flex-grow: 2;
+
+  background-color: #f0932b;
+
+  color: white;
+}
+
+.result {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  padding-bottom: 20px;
+
+  width: 200px;
+}
+
+.in1 {
+  margin-bottom: 10px;
+
+  height: 50px;
+
+  border-radius: 10px;
+
+  background-color: #32414e;
+
+  color: white;
+
+  border: none;
+
+  outline: none;
+
+  direction: rtl;
+
+  padding-right: 20px;
+
+  font-size: 20px;
+
+  margin-top: 15px;
+}
+
+.in2 {
+  border-radius: 10px;
+
+  height: 72px;
+
+  background-color: #32414e;
+
+  color: white;
+
+  border: none;
+
+  outline: none;
+
+  direction: rtl;
+
+  padding-right: 20px;
+
+  font-size: 20px;
+}
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+.contaner {
+  width: 300px;
+
+  height: 60vh;
+
+  margin: 100px auto;
+
+  background-color: #243441;
+
+  align-items: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: white;
+
+  border-radius: 20px;
+}
+
+.boxnumber {
+  width: 200px;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+
+.num {
+  padding: 6px;
+
+  flex-grow: 1;
+
+  padding-right: 5px;
+
+  margin-right: 5px;
+
+  border-radius: 10px;
+
+  box-shadow: 10px 10px 20px rgb(56, 55, 55);
+
+  background-color: #32414e;
+
+  color: white;
+}
+
+.num:hover {
+  background-color: rgb(23, 23, 66);
+
+  transition: 0.5s;
+}
+
+.row {
+  display: flex;
+
+  padding-bottom: 20px;
+
+  padding-top: 10px;
+}
+
+.numm {
+  flex-grow: 2;
+
+  background-color: #f0932b;
+
+  color: white;
+}
+
+.result {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  padding-bottom: 20px;
+
+  width: 200px;
+}
+
+.in1 {
+  margin-bottom: 10px;
+
+  height: 50px;
+
+  border-radius: 10px;
+
+  background-color: #32414e;
+
+  color: white;
+
+  border: none;
+
+  outline: none;
+
+  direction: rtl;
+
+  padding-right: 20px;
+
+  font-size: 20px;
+
+  margin-top: 15px;
+}
+
+.in2 {
+  border-radius: 10px;
+
+  height: 25px;
+
+  background-color: #32414e;
+
+  color: white;
+
+  border: none;
+
+  outline: none;
+
+  direction: rtl;
+
+  padding-right: 20px;
+
+  font-size: 20px;
+}
