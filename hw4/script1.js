@@ -1,22 +1,25 @@
-let arrayOfIntegers = [-9, -105, -9, -9, -9, -9, 6, 105];
-let arrayOfLonelyIntegers = [];
+let integers = [-105, 4, -9, 55, 9, 6, 0, 0, 105];
+// let integers = prompt("add many numbers: ")
+//   .split(",")
+//   .map((x) => +x);
+let lonelyIntegers = [];
 let temp = 0;
-let negativepair = 0;
+let isNegativePair = false;
 
 function lonelyInteger(array) {
   while (array.length > 1) {
-    console.log(`array.length: ${array.length}`);
     let temp = array.shift();
-    negativepair = array.find((number) => {
+    array.find((number) => {
       if (number == -temp) {
         array.splice(array.indexOf(number), 1);
-        return true;
-      } else undefined;
+        return (isNegativePair = true);
+      } else isNegativePair = false;
     }); //end find
-    negativepair ? "" : arrayOfLonelyIntegers.push(temp);
+    isNegativePair ? "" : lonelyIntegers.push(temp);
   } //end while
-  array.length == 1 ? arrayOfLonelyIntegers.push(array[0]) : "";
-  console.log(`LonelyIntegers: ${[...new Set(arrayOfLonelyIntegers)]}`);
+
+  array.length == 1 ? lonelyIntegers.push(array[0]) : "";
+  console.log(`LonelyIntegers: ${[...new Set(lonelyIntegers)]}`);
 }
 
-lonelyInteger(arrayOfIntegers);
+lonelyInteger(integers);
